@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+  width: 100%;
+  padding: 0.8rem 0 0 0;
+}
+
+h1 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 600;
+  font-size: 9.4rem;
+  width: 100%;
+  letter-spacing: -1px;
+  line-height: 1.7;
+}
+
+h2 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  width: 100%;
+  letter-spacing: -0.25px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  width: 100%;
+}
+
+h4 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 3.2rem;
+  width: 100%;
+  letter-spacing: 0.25px;
+}
+
+h5 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 2.8rem;
+  width: 100%;
+}
+
+h6 {
+  font-family: "Anek Telugu", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #6962f7;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+a:hover {
+  color: #0a2540;
+}

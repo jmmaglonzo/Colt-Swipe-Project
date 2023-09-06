@@ -1,0 +1,76 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $bodyFont;
+  color: $textDark;
+  width: 100%;
+  padding: $spacingSm 0 0 0;
+}
+
+h1 {
+  font-family: $headingFont;
+  font-weight: 600;
+  font-size: $h1Size;
+  width: 100%;
+  letter-spacing: -1px;
+  line-height: 1.7;
+}
+
+h2 {
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $h2Size;
+  width: 100%;
+  letter-spacing: -0.25px;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $h3size;
+  width: 100%;
+}
+
+h4 {
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $h4size;
+  width: 100%;
+  letter-spacing: 0.25px;
+}
+
+h5 {
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $h5size;
+  width: 100%;
+}
+
+h6 {
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $h6size;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $purple1;
+  font-weight: 500;
+  transition: color 0.25s ease;
+
+  &:hover {
+    color: $primaryAccent;
+  }
+}
