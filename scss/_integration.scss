@@ -1,0 +1,38 @@
+.integration-section {
+  color: $textWhite;
+  background-color: $primaryAccent;
+  h2 {
+    font-size: 5rem;
+  }
+  .card-container {
+    display: flex;
+    margin: $spacingLg 0;
+
+    .card {
+      width: 50%;
+    }
+  }
+
+  .primary-button {
+    background-color: $blue1;
+    color: $primaryAccent;
+    margin: $spacingMd 0 0 0;
+    &:hover {
+      background-color: $bgWhite;
+    }
+  }
+
+  .secondary-button {
+    color: $blue1;
+  }
+
+  #api-code {
+    margin: 0 0 $spacingMd 0;
+  }
+
+  #api-code,
+  #terminal-code {
+    max-width: 47rem;
+    border-radius: 20px;
+  }
+}

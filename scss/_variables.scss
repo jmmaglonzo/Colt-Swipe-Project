@@ -1,20 +1,31 @@
-$textDark: #000;
-$textWhite: #fff;
-$textGrey: #adbedc;
-$bodyFont: "Roboto", sans-serif;
-$headingFont: "Anek Telugu", sans-serif;
-$h1Size: 9.4rem;
-$h2Size: 5rem;
-$h3size: 4rem;
-$h4size: 3.2rem;
-$h5size: 2.8rem;
-$h6size: 2.2rem;
+// COLORS
 $purple1: #6962f7;
 $purple2: #700fff;
 $blue1: #00d4ff;
 $primaryAccent: #0a2540;
 $bgWhite: #fff;
 $bgLight: #f7f9fc;
+$textDark: #000;
+$textWhite: #fff;
+$textGrey: #adbedc;
+
+// FONTS
+
+$bodyFont: "Roboto", sans-serif;
+$headingFont: "Anek Telugu", sans-serif;
+// SIZE
+
+$psize: 1.8rem;
+$pheight: 2.6rem;
+$secondarytextsize: 1.4rem;
+$secondaryLheight: 1.8rem;
+$h1Size: 9.4rem;
+$h2Size: 5rem;
+$h3size: 4rem;
+$h4size: 3.2rem;
+$h5size: 2.8rem;
+$h6size: 2.2rem;
+$subtitle: 1.7rem;
 
 // SPACING
 
@@ -22,3 +33,14 @@ $spacingSm: 0.8rem;
 $spacingMd: 1.6rem;
 $spacingLg: 3.2rem;
 $spacingXl: 6.4rem;
+
+// buttons
+
+$primaryHoverColor: #6d7a88;
+$btnsize: 1.6rem;
+
+$standardWidth: 114.4rem;
+
+// SHADOWS
+
+$standardbShadows: 0px 2px 40px rgba(0, 0, 0, 0.15);

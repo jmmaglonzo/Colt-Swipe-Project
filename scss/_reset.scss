@@ -15,6 +15,14 @@ body {
   color: $textDark;
   width: 100%;
   padding: $spacingSm 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
 }
 
 h1 {
@@ -23,16 +31,14 @@ h1 {
   font-size: $h1Size;
   width: 100%;
   letter-spacing: -1px;
-  line-height: 1.7;
+  line-height: 1;
 }
 
 h2 {
   font-family: $headingFont;
-  font-weight: 500;
-  font-size: $h2Size;
+  font-weight: 600;
+  font-size: $h3size;
   width: 100%;
-  letter-spacing: -0.25px;
-  line-height: 1.5;
 }
 
 h3 {
@@ -73,4 +79,135 @@ a {
   &:hover {
     color: $primaryAccent;
   }
+}
+
+.subtitle {
+  color: $purple1;
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $subtitle;
+  line-height: 2.6rem;
+}
+
+.subtitle2 {
+  color: $blue1;
+  font-family: $headingFont;
+  font-weight: 500;
+  font-size: $subtitle;
+  line-height: 2.6rem;
+}
+
+p {
+  font-size: $psize;
+  line-height: $pheight;
+  font-weight: 400;
+  margin: $spacingMd 0;
+}
+
+.secondary-text {
+  font-size: $secondarytextsize;
+  line-height: $secondaryLheight;
+  color: $textGrey;
+  letter-spacing: 0.25rem;
+}
+
+.primary-button {
+  font-family: $bodyFont;
+  font-size: $btnsize;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: $primaryAccent;
+  color: $textWhite;
+  border: none;
+  padding: $spacingSm $spacingMd;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: $primaryHoverColor;
+    cursor: pointer;
+  }
+}
+
+.secondary-button {
+  font-family: $bodyFont;
+  font-size: $btnsize;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  border-radius: 20px;
+  background-color: transparent;
+  color: $primaryAccent;
+  border: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+}
+
+.section-container {
+  width: 100%;
+  max-width: $standardWidth;
+}
+
+.two-column {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  & > .col-left {
+    width: 50%;
+    padding: 0 $spacingMd 0 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  & > .col-right {
+    width: 50%;
+    padding: 0 0 0 $spacingMd;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: $spacingSm $spacingMd $spacingSm 0;
+
+  img {
+    height: 5rem;
+    margin: 0 0 $spacingSm;
+  }
+
+  h3 {
+    font-family: $headingFont;
+    font-weight: 500;
+    font-size: $h6size;
+    width: 100%;
+  }
+}
+
+.hero,
+.partner-section,
+.unified-section,
+.graphic-section,
+.integration-section,
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

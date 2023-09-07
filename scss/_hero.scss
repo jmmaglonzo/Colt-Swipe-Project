@@ -1,0 +1,49 @@
+main {
+  margin: $spacingXl 0;
+}
+
+.hero {
+  p {
+    max-width: 48rem;
+  }
+
+  .btn-container {
+    display: flex;
+    margin: $spacingMd 0;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-of-type(2) {
+        color: $purple2;
+        margin: 0 0 0 $spacingMd;
+      }
+    }
+  }
+
+  .hero-phone {
+    height: 56.4rem;
+    align-items: flex-end;
+    img {
+      height: 62.8rem;
+      transform: translate(32px, -32px);
+    }
+  }
+}
+
+// PArtners
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: $spacingXl 0;
+  column-gap: $spacingMd;
+  row-gap: $spacingLg;
+  img {
+    width: 100%;
+    place-self: center;
+  }
+}

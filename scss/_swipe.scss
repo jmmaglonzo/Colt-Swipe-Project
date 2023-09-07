@@ -1,0 +1,17 @@
+.why-swipe-section {
+  .card-container {
+    display: flex;
+    margin: $spacingLg 0;
+
+    .card {
+      width: 25%;
+      padding: 0 $spacingSm 0 0;
+      margin: 0 $spacingMd 0 0;
+
+      .secondary-text {
+        color: $textDark;
+        font-weight: 500;
+      }
+    }
+  }
+}

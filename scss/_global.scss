@@ -1,0 +1,40 @@
+.global-section {
+  background-color: $primaryAccent;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: $textWhite;
+  position: relative;
+  padding: calc($spacingXl) * 3 0;
+
+  .card-container {
+    display: flex;
+    margin: calc($spacingXl) * 2 0;
+
+    .card {
+      width: 25%;
+      padding: 0 $spacingSm 0 0;
+      margin: 0 $spacingSm 0 0;
+
+      h3 {
+        border-left: 2px solid $blue1;
+        padding: 0 0 0 $spacingSm;
+        line-height: 2.8rem;
+      }
+    }
+  }
+
+  a {
+    color: $blue1;
+    &:hover {
+      color: $textWhite;
+    }
+  }
+
+  #global {
+    max-width: 84.4rem;
+    opacity: 25%;
+    position: absolute;
+    top: 0;
+  }
+}

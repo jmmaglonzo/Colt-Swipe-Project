@@ -1,0 +1,17 @@
+.unified-section {
+  padding: $spacingXl 0;
+
+  h2 {
+    width: 50%;
+    margin-bottom: $spacingMd;
+  }
+
+  .primary-button {
+    background-color: $purple1;
+    margin: $spacingMd 0;
+
+    &:hover {
+      background-color: $primaryAccent;
+    }
+  }
+}

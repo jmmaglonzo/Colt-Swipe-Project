@@ -1,0 +1,30 @@
+.graphic-grid {
+  display: grid;
+  grid-template-areas:
+    "card slack slack"
+    "phone slack slack"
+    "phone dash dash";
+  grid-gap: $spacingLg;
+  padding: $spacingLg 0;
+
+  img {
+    width: 100%;
+    box-shadow: $standardbShadows;
+  }
+
+  #credit-card {
+    grid-area: card;
+  }
+
+  #slack-invoice {
+    grid-area: slack;
+  }
+
+  #phone {
+    grid-area: phone;
+  }
+
+  #dash {
+    grid-area: dash;
+  }
+}

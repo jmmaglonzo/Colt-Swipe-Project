@@ -1,2 +1,41 @@
 @import "reset";
 @import "variables";
+// NAVBAR
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $standardWidth;
+  padding: 0 $spacingMd;
+  .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: $textWhite;
+      margin: 0 $spacingMd;
+      font-weight: bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .navbar-btn {
+    background: rgba(250, 250, 250, 0.25);
+    &:hover {
+      background: rgba(250, 250, 250, 0.5);
+    }
+  }
+}
+
+@import "hero";
+@import "unifiedPlatform";
+@import "graphicGrid";
+@import "integration";
+@import "swipe";
+@import "global";
+@import "virtual-section";
