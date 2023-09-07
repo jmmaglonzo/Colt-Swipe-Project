@@ -4,10 +4,11 @@ $purple2: #700fff;
 $blue1: #00d4ff;
 $primaryAccent: #0a2540;
 $bgWhite: #fff;
-$bgLight: #f7f9fc;
+$bgLight: #d9dfe0;
 $textDark: #000;
 $textWhite: #fff;
 $textGrey: #adbedc;
+$bggrey: #e5e5e5;
 
 // FONTS
 
@@ -44,3 +45,13 @@ $standardWidth: 114.4rem;
 // SHADOWS
 
 $standardbShadows: 0px 2px 40px rgba(0, 0, 0, 0.15);
+
+// GRADIENT
+$primaryGradient: linear-gradient(
+  101.33deg,
+  #08209a 0.76%,
+  #6563ff,
+  33.33%,
+  #36c5f0 76.92%,
+  #83e2ff 96.96%
+);

@@ -17,10 +17,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 main {
   width: 100%;
+  margin: 6.4rem 0 0 0;
 }
 
 h1 {
@@ -232,10 +234,6 @@ p {
   background: rgba(250, 250, 250, 0.5);
 }
 
-main {
-  margin: 6.4rem 0;
-}
-
 .hero p {
   max-width: 48rem;
 }
@@ -394,4 +392,152 @@ main {
   opacity: 25%;
   position: absolute;
   top: 0;
+}
+
+.virtual-event-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 12.8rem 0;
+  background-color: #e5e5e5;
+}
+.virtual-event-section .primary-button {
+  background-color: #6962f7;
+  margin: 1.6rem 0 0 0;
+}
+.virtual-event-section .primary-button:hover {
+  background-color: #0a2540;
+}
+.virtual-event-section .col-left {
+  height: 44.6rem;
+  padding: 0 6.4rem 0 0;
+}
+.virtual-event-section .swipe-sessions-card {
+  width: 54rem;
+  height: 44.6rem;
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.virtual-event-section .swipe-sessions-card .card-top {
+  background-color: #6962f7;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.virtual-event-section .swipe-sessions-card .card-top img {
+  z-index: 2;
+  width: 35rem;
+}
+.virtual-event-section .swipe-sessions-card .card-top::before {
+  background: linear-gradient(101.33deg, #08209a 0.76%, #6563ff, 33.33%, #36c5f0 76.92%, #83e2ff 96.96%);
+  content: "";
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  transform: skewY(-5deg);
+  top: -40%;
+  z-index: 1;
+}
+.virtual-event-section .swipe-sessions-card .card-top .avatars {
+  position: absolute;
+  z-index: 3;
+  bottom: -7rem;
+  left: 6.4rem;
+}
+.virtual-event-section .swipe-sessions-card .card-top .avatars img {
+  width: 8rem;
+}
+.virtual-event-section .swipe-sessions-card .card-top .avatars img:nth-of-type(2) {
+  position: absolute;
+  left: 5.5rem;
+}
+.virtual-event-section .card-bottom {
+  width: 100%;
+  height: 50%;
+  padding: 6.4rem;
+}
+.virtual-event-section .card-bottom .subtitle {
+  margin: 1.6rem 0 0 0;
+}
+.virtual-event-section .card-bottom .secondary-text {
+  color: #000;
+  width: 50%;
+  font-weight: 700;
+}
+
+.get-started-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6.4rem 0;
+  background-color: #e5e5e5;
+}
+.get-started-section .col-left {
+  padding: 0 6.4rem 0 0;
+}
+.get-started-section .primary-button {
+  background-color: #6962f7;
+}
+.get-started-section .card-container {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.get-started-section .card-container h3 {
+  font-weight: 600;
+}
+.get-started-section .card-container .secondary-button {
+  color: #700fff;
+}
+.get-started-section .card-container .secondary-text {
+  color: #000;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #d9dfe0;
+  padding: 6.4rem 0;
+}
+.footer .section-container {
+  display: flex;
+}
+.footer .section-container img {
+  max-width: 10.8rem;
+  margin: 0 0 1.6rem 0;
+}
+.footer .section-container .icon-link {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0;
+}
+.footer .section-container .icon-link img {
+  width: 2.4rem;
+  padding: 0 0.8rem 0 0;
+}
+.footer .section-container .col {
+  width: 25%;
+}
+.footer .section-container .col h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.footer .section-container .col ul {
+  list-style: none;
+}
+.footer .section-container .col ul li {
+  margin: 1.6rem 0;
+}
+.footer .section-container .col a {
+  color: #000;
+  font-weight: normal;
+  font-weight: 500;
+}
+.footer .section-container .col a:hover {
+  color: #700fff;
+  text-decoration: underline;
 }

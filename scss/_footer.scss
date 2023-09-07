@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $bgLight;
+  padding: $spacingXl 0;
+
+  .section-container {
+    display: flex;
+
+    img {
+      max-width: 10.8rem;
+      margin: 0 0 $spacingMd 0;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      margin: $spacingSm 0;
+      img {
+        width: 2.4rem;
+        padding: 0 $spacingSm 0 0;
+      }
+    }
+
+    .col {
+      width: 25%;
+
+      h3 {
+        font-size: $h6size;
+        font-weight: 700;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          margin: $spacingMd 0;
+        }
+      }
+
+      a {
+        color: $textDark;
+        font-weight: normal;
+        font-weight: 500;
+
+        &:hover {
+          color: $purple2;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.get-started-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: $spacingXl 0;
+  background-color: $bggrey;
+
+  .col-left {
+    padding: 0 6.4rem 0 0;
+  }
+
+  .primary-button {
+    background-color: $purple1;
+  }
+
+  .card-container {
+    display: flex;
+    align-items: center;
+    gap: $spacingLg;
+
+    h3 {
+      font-weight: 600;
+    }
+
+    .secondary-button {
+      color: $purple2;
+    }
+
+    .secondary-text {
+      color: $textDark;
+    }
+  }
+}
