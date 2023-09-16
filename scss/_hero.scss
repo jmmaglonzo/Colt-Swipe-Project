@@ -1,4 +1,25 @@
+// GRADIENT
+
+#gradient-canvas {
+  width: 200%;
+  height: 97rem;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: -65rem;
+  left: -50%;
+  z-index: -1;
+
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
+}
+
 .hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
   p {
     max-width: 48rem;
   }
@@ -31,15 +52,22 @@
 
 // PArtners
 
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin: $spacingXl 0;
-  column-gap: $spacingMd;
-  row-gap: $spacingLg;
-  img {
-    width: 100%;
-    place-self: center;
+.partner-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $bgWhite;
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: $spacingXl 0;
+    column-gap: $spacingMd;
+    row-gap: $spacingLg;
+
+    img {
+      width: 100%;
+      place-self: center;
+    }
   }
 }

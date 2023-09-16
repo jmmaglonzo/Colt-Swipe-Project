@@ -1,9 +1,35 @@
 .integration-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   color: $textWhite;
-  background-color: $primaryAccent;
-  h2 {
-    font-size: 5rem;
+  position: relative;
+  z-index: 5;
+  padding: calc($spacingXl) * 3 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    background-color: $bgLight;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
   }
+
+  &::before {
+    content: "";
+    background-color: $primaryAccent;
+    position: absolute;
+    z-index: -1;
+    height: 110rem;
+    width: 100%;
+    transform: skewY(-10deg);
+    top: -3.2rem;
+    left: 0;
+  }
+
   .card-container {
     display: flex;
     margin: $spacingLg 0;

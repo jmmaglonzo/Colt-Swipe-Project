@@ -1,11 +1,22 @@
 .global-section {
-  background-color: $primaryAccent;
   width: 100%;
   display: flex;
   justify-content: center;
   color: $textWhite;
   position: relative;
-  padding: calc($spacingXl) * 3 0;
+  padding: calc($spacingXl) * 3 0 0 0;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 120rem;
+    background-color: $primaryAccent;
+    position: absolute;
+    top: -3.2rem;
+    left: 0;
+    transform: skewY(-10deg);
+    z-index: -1;
+  }
 
   .card-container {
     display: flex;
@@ -31,10 +42,12 @@
     }
   }
 
-  #global {
-    max-width: 84.4rem;
-    opacity: 25%;
-    position: absolute;
-    top: 0;
+  .col-right {
+    #global {
+      max-width: 84.4rem;
+      opacity: 25%;
+      position: absolute;
+      top: 10%;
+    }
   }
 }

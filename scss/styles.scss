@@ -9,6 +9,7 @@
   width: 100%;
   max-width: $standardWidth;
   padding: 0 $spacingMd;
+  margin: 0 0 $spacingXl 0;
   .nav-links {
     display: flex;
     list-style: none;
@@ -41,3 +42,4 @@
 @import "virtual-section";
 @import "getstarted";
 @import "footer";
+@import "mediaqueries";

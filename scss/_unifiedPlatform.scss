@@ -1,5 +1,9 @@
 .unified-section {
   padding: $spacingXl 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $bgLight;
 
   h2 {
     width: 50%;

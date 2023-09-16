@@ -1,4 +1,8 @@
 .why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: calc($spacingXl) * 3 0;
   .card-container {
     display: flex;
     margin: $spacingLg 0;
@@ -7,7 +11,9 @@
       width: 25%;
       padding: 0 $spacingSm 0 0;
       margin: 0 $spacingMd 0 0;
-
+      img {
+        height: 3.5rem;
+      }
       .secondary-text {
         color: $textDark;
         font-weight: 500;

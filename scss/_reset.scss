@@ -20,6 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-color: $bggrey;
 }
 
 main {
@@ -201,15 +202,4 @@ p {
     font-size: $h6size;
     width: 100%;
   }
-}
-
-.hero,
-.partner-section,
-.unified-section,
-.graphic-section,
-.integration-section,
-.why-swipe-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }

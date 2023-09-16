@@ -1,30 +1,39 @@
-.graphic-grid {
-  display: grid;
-  grid-template-areas:
-    "card slack slack"
-    "phone slack slack"
-    "phone dash dash";
-  grid-gap: $spacingLg;
-  padding: $spacingLg 0;
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: $bgLight;
 
-  img {
-    width: 100%;
-    box-shadow: $standardbShadows;
-  }
+  .graphic-grid {
+    display: grid;
+    grid-template-areas:
+      "card slack slack"
+      "phone slack slack"
+      "phone dash dash";
+    grid-gap: $spacingLg;
+    padding: $spacingLg 0;
 
-  #credit-card {
-    grid-area: card;
-  }
+    img {
+      width: 100%;
+      box-shadow: $standardbShadows;
+      position: relative;
+      z-index: 7;
+    }
 
-  #slack-invoice {
-    grid-area: slack;
-  }
+    #credit-card {
+      grid-area: card;
+    }
 
-  #phone {
-    grid-area: phone;
-  }
+    #slack-invoice {
+      grid-area: slack;
+    }
 
-  #dash {
-    grid-area: dash;
+    #phone {
+      grid-area: phone;
+    }
+
+    #dash {
+      grid-area: dash;
+    }
   }
 }

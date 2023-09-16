@@ -18,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-color: #e5e5e5;
 }
 
 main {
@@ -194,17 +195,6 @@ p {
   width: 100%;
 }
 
-.hero,
-.partner-section,
-.unified-section,
-.graphic-section,
-.integration-section,
-.why-swipe-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -212,6 +202,7 @@ p {
   width: 100%;
   max-width: 114.4rem;
   padding: 0 1.6rem;
+  margin: 0 0 6.4rem 0;
 }
 .navbar .nav-links {
   display: flex;
@@ -234,6 +225,25 @@ p {
   background: rgba(250, 250, 250, 0.5);
 }
 
+#gradient-canvas {
+  width: 200%;
+  height: 97rem;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: -65rem;
+  left: -50%;
+  z-index: -1;
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .hero p {
   max-width: 48rem;
 }
@@ -259,7 +269,13 @@ p {
   transform: translate(32px, -32px);
 }
 
-.partners-grid {
+.partner-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+.partner-section .partners-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -267,13 +283,17 @@ p {
   column-gap: 1.6rem;
   row-gap: 3.2rem;
 }
-.partners-grid img {
+.partner-section .partners-grid img {
   width: 100%;
   place-self: center;
 }
 
 .unified-section {
   padding: 6.4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d9dfe0;
 }
 .unified-section h2 {
   width: 50%;
@@ -287,35 +307,66 @@ p {
   background-color: #0a2540;
 }
 
-.graphic-grid {
+.graphic-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #d9dfe0;
+}
+.graphic-section .graphic-grid {
   display: grid;
   grid-template-areas: "card slack slack" "phone slack slack" "phone dash dash";
   grid-gap: 3.2rem;
   padding: 3.2rem 0;
 }
-.graphic-grid img {
+.graphic-section .graphic-grid img {
   width: 100%;
   box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 7;
 }
-.graphic-grid #credit-card {
+.graphic-section .graphic-grid #credit-card {
   grid-area: card;
 }
-.graphic-grid #slack-invoice {
+.graphic-section .graphic-grid #slack-invoice {
   grid-area: slack;
 }
-.graphic-grid #phone {
+.graphic-section .graphic-grid #phone {
   grid-area: phone;
 }
-.graphic-grid #dash {
+.graphic-section .graphic-grid #dash {
   grid-area: dash;
 }
 
 .integration-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   color: #fff;
-  background-color: #0a2540;
+  position: relative;
+  z-index: 5;
+  padding: 19.2rem 0;
 }
-.integration-section h2 {
-  font-size: 5rem;
+.integration-section::after {
+  content: "";
+  width: 100%;
+  background-color: #d9dfe0;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.integration-section::before {
+  content: "";
+  background-color: #0a2540;
+  position: absolute;
+  z-index: -1;
+  height: 110rem;
+  width: 100%;
+  transform: skewY(-10deg);
+  top: -3.2rem;
+  left: 0;
 }
 .integration-section .card-container {
   display: flex;
@@ -344,6 +395,12 @@ p {
   border-radius: 20px;
 }
 
+.why-swipe-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 19.2rem 0;
+}
 .why-swipe-section .card-container {
   display: flex;
   margin: 3.2rem 0;
@@ -353,19 +410,32 @@ p {
   padding: 0 0.8rem 0 0;
   margin: 0 1.6rem 0 0;
 }
+.why-swipe-section .card-container .card img {
+  height: 3.5rem;
+}
 .why-swipe-section .card-container .card .secondary-text {
   color: #000;
   font-weight: 500;
 }
 
 .global-section {
-  background-color: #0a2540;
   width: 100%;
   display: flex;
   justify-content: center;
   color: #fff;
   position: relative;
-  padding: 19.2rem 0;
+  padding: 19.2rem 0 0 0;
+}
+.global-section::before {
+  content: "";
+  width: 100%;
+  height: 120rem;
+  background-color: #0a2540;
+  position: absolute;
+  top: -3.2rem;
+  left: 0;
+  transform: skewY(-10deg);
+  z-index: -1;
 }
 .global-section .card-container {
   display: flex;
@@ -387,11 +457,11 @@ p {
 .global-section a:hover {
   color: #fff;
 }
-.global-section #global {
+.global-section .col-right #global {
   max-width: 84.4rem;
   opacity: 25%;
   position: absolute;
-  top: 0;
+  top: 10%;
 }
 
 .virtual-event-section {
@@ -399,6 +469,18 @@ p {
   justify-content: center;
   width: 100%;
   padding: 12.8rem 0;
+  background-color: #e5e5e5;
+  position: relative;
+}
+.virtual-event-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  top: -3.2rem;
+  left: 0;
+  z-index: -1;
   background-color: #e5e5e5;
 }
 .virtual-event-section .primary-button {
@@ -420,7 +502,6 @@ p {
   overflow: hidden;
 }
 .virtual-event-section .swipe-sessions-card .card-top {
-  background-color: #6962f7;
   width: 100%;
   height: 50%;
   display: flex;
@@ -540,4 +621,135 @@ p {
 .footer .section-container .col a:hover {
   color: #700fff;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 1144px) {
+  .section-container {
+    padding: 0 1.6rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .integration-section .col-left {
+    width: 60%;
+  }
+  .integration-section .col-right {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 6.2rem;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 3.4rem;
+  }
+  .unified-section h2 {
+    width: 100%;
+  }
+  .integration-section .card-container {
+    flex-direction: column;
+  }
+  .integration-section .card-container .card {
+    width: 100%;
+  }
+  .why-swipe-section .card-container {
+    flex-wrap: wrap;
+  }
+  .why-swipe-section .card-container .card {
+    width: 50%;
+    margin: 1.6rem 0;
+  }
+  .global-section .card-container {
+    flex-wrap: wrap;
+    margin: 6.4rem 0;
+  }
+  .global-section .card-container .card {
+    width: 50%;
+    margin: 1.6rem 0;
+  }
+  .get-started-section .two-column {
+    align-items: center;
+  }
+  .get-started-section .two-column .col-right .card {
+    width: 100%;
+    margin: 3.2rem 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .partner-section .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column .col-left {
+    width: 100%;
+  }
+  .two-column .col-right {
+    width: 100%;
+    padding: 0;
+  }
+  .unified-section h2 {
+    width: 100%;
+  }
+  html,
+  body {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .integration-section .col-right {
+    display: none;
+  }
+  .why-swipe-section .card-container .card {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+  .global-section .card-container .card {
+    width: 100%;
+    margin: 0.8rem 0;
+  }
+  .global-section .col-right #global {
+    opacity: 10%;
+  }
+  .virtual-event-section .swipe-sessions-card {
+    width: 100%;
+    margin: 3.2rem 0;
+  }
+  .virtual-event-section .swipe-sessions-card .card-top {
+    height: 40%;
+  }
+  .virtual-event-section .swipe-sessions-card .card-top img {
+    width: 30rem;
+  }
+  .virtual-event-section .swipe-sessions-card .secondary-text {
+    width: 100%;
+  }
+  .get-started-section .two-column {
+    align-items: center;
+  }
+  .get-started-section .two-column .col-right {
+    flex-wrap: wrap;
+  }
+  .get-started-section .two-column .col-right .card {
+    width: 100%;
+    margin: 3.2rem 0;
+  }
+  .footer .section-container {
+    flex-wrap: wrap;
+  }
+  .footer .section-container .col {
+    width: 50%;
+    margin: 1.6rem 0;
+  }
+  .footer .section-container .col img {
+    width: 7rem;
+  }
+  .footer .section-container .col .icon-link img {
+    width: 3rem;
+  }
+  .footer .section-container .col a {
+    font-size: 1.2rem;
+  }
 }
